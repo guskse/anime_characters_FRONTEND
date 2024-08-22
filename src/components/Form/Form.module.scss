@@ -1,0 +1,75 @@
+$form-width: 40%;
+$form-padding: 20px;
+$form-margin: 20px auto;
+$form-background: #f9f9f9d0;
+$form-border-radius: 8px;
+$input-padding: 8px;
+$input-border: 1px solid #ccc;
+$input-border-radius: 4px;
+$button-padding: 10px 15px;
+$button-background: #3498db;
+$button-color: #fff;
+$button-border: none;
+$button-border-radius: 4px;
+$button-hover-background: #b94f29;
+
+form {
+  width: $form-width;
+  margin: $form-margin;
+  padding: $form-padding;
+  background-color: $form-background;
+  border-radius: $form-border-radius;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  div {
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: $input-padding;
+      border: $input-border;
+      border-radius: $input-border-radius;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    label[for="isAdult"] {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: $button-padding;
+    background-color: $button-background;
+    color: $button-color;
+    border: $button-border;
+    border-radius: $button-border-radius;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $button-hover-background;
+    }
+  }
+}
+
+// Media query for mobile devices
+@media (max-width: 600px) {
+  form {
+    width: 80%; // Adjust the width to 80% for mobile devices
+    margin: 20px auto; // Center the form and add margin
+  }
+}

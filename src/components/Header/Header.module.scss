@@ -1,0 +1,44 @@
+.fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s;
+  z-index: 9;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(255, 102, 0);
+
+  .header {
+    width: 100%;
+    height: 30vh;
+    min-height: 130px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  img {
+    height: 10rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+// Media query for mobile devices
+@media (max-width: 600px) {
+  header {
+    .title{
+      display: none;
+    }
+  }
+}

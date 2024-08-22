@@ -1,0 +1,30 @@
+/* Floating image style */
+.floatingImage {
+  width: 200px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  animation: float 3s ease-in-out infinite; /* Apply animation */
+  position: absolute;
+  right: 10px;
+  top: 150px;
+}
+
+/* Keyframes for floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  50% {
+    transform: translateY(20px); /* Float up */
+  }
+  100% {
+    transform: translateY(0); /* Return to start position */
+  }
+}
+
+/* Media query for hiding the image on small screens */
+@media (max-width: 600px) {
+  /* Adjust the max-width value as needed */
+  .floatingContainer {
+    display: none; /* Hide the container on small screens */
+  }
+}
